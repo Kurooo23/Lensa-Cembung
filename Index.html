@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi Lensa Cembung</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <canvas id="canvas"></canvas>
+        <div id="controls">
+            <label>Panjang Fokus: <input type="range" id="focusLength" min="50" max="500" value="200"></label>
+            <span id="focusValue">200</span><br>
+            <label>Posisi Objek: <input type="range" id="objectPosition" min="-600" max="600" value="-400"></label>
+            <span id="positionValue">-400</span><br>
+            <label>Ukuran Objek: <input type="range" id="objectSize" min="50" max="300" value="200"></label>
+            <span id="sizeValue">200</span><br>
+            <label>Mode Objek: 
+                <select id="objectMode">
+                    <option value="image">Gambar</option>
+                    <option value="cube">Kubus</option>
+                </select>
+            </label><br>
+            <label>Algoritma Garis: 
+                <select id="lineAlgorithm">
+                    <option value="standard">Standar</option>
+                    <option value="dda">DDA</option>
+                    <option value="midpoint">Midpoint</option>
+                </select>
+            </label>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
